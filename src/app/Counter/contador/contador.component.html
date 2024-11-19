@@ -1,0 +1,13 @@
+
+<h1>
+    Padre
+  </h1>
+  <h2>{{contador}}</h2>
+  
+  <button (click)="incrementar()">increment</button>
+  <button (click)="decrementar()">decrement</button>
+  
+  <hr>
+  <app-hijo [contador]="contador" (contadorCambio)="contador=$event"></app-hijo>
+
+  

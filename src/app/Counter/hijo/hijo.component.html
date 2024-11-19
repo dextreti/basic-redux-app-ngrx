@@ -1,0 +1,9 @@
+<h2>Hijo</h2>
+<h2>{{ contador}}</h2>
+
+<button (click)="multiplicar()">Multiplicar</button>
+<button (click)="dividir()">Dividir</button>
+
+
+<hr>
+<app-nieto [contador]="contador" (contadorNietoCambio)="resetNieto($event)"></app-nieto>
